@@ -19,6 +19,8 @@ public class SushiGo {
         Card makiRoll1;
         Card makiRoll2;
         Card makiRoll3;
+        Card pudding;
+        Hand puddingPile;
 
         boolean turn = true;
         int wasiriPairsSA = 0;
@@ -42,6 +44,8 @@ public class SushiGo {
         makiRoll1 = new Card(1,5);
         makiRoll2 = new Card(2,4);
         makiRoll3 = new Card(3,3);
+        pudding = new Card(1,9);
+        puddingPile = new Hand();
 
         //System.out.println(test.toString());
 
@@ -659,6 +663,13 @@ public class SushiGo {
 /////////////////
 
         /////////pudding Score
+        int puddingcount = pairtest.cardCounter(pudding);
+        for (int i=0; i<=puddingcount; i++){
+            puddingPile.addCard(pudding);
+        }
+
+        /////////////
+
 
 //        Card[] test2;
 //        test2 = test.playDeck();
