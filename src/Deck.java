@@ -64,8 +64,8 @@ public class Deck {
 
     public Card[] playDeck() {
         // creates a play deck of 20 cards.
-       play_Deck = new Card[20];
-       for (int i = 0 ; i<=19 ; i++) {
+       play_Deck = new Card[60];
+       for (int i = 0 ; i<60 ; i++) {
            play_Deck[i] = dealCard();
        }
         cards_Used = 20;

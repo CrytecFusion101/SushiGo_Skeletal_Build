@@ -45,6 +45,16 @@ public class Hand {
         return cardCount;
     }
 
+    public int cardCounter(int value, int type) {
+        int cardCount = 0;
+        for (int i= 0; i<hand.size(); i++){
+            if (this.getCard(i).getType() == type && this.getCard(i).getValue() == value){
+                cardCount++;
+            }
+        }
+        return cardCount;
+    }
+
     public void removeCard(int position) {
         // If the specified position is a valid position in the hand,
         // then the card in that position is removed.
